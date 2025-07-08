@@ -1,0 +1,32 @@
+# Ignore Python environment
+frappe-env/
+env/
+*.pyc
+*.pyo
+__pycache__/
+
+# Node and frontend assets
+node_modules/
+*.log
+sites/assets/
+sites/**/public/
+sites/**/private/
+sites/**/backups/
+sites/**/site_config.json
+sites/**/installed_apps.txt
+sites/**/sitemap.xml
+sites/**/sitemap.xml.gz
+sites/**/scheduler_log.txt
+sites/**/scheduler.log
+sites/**/logs/
+
+# OS junk
+.DS_Store
+*.swp
+
+# Redis, PIDs
+*.pid
+*.sock
+*.rdb
+*.aof
+myerp/sites/finsite.local/site_config.json
