@@ -1,0 +1,20 @@
+[project]
+name = "finance_app"
+authors = [
+    { name = "Jerono", email = "jerono@gmail.com"}
+]
+description = "A modular and scalable finance system built from scratch using Frappe Framework and ERPNext, designed to streamline financial operations for businesses or public institutions."
+requires-python = ">=3.10"
+readme = "README.md"
+dynamic = ["version"]
+dependencies = [
+    # "frappe~=15.0.0" # Installed and managed by bench.
+]
+
+[build-system]
+requires = ["flit_core >=3.4,<4"]
+build-backend = "flit_core.buildapi"
+
+# These dependencies are only installed when developer mode is enabled
+[tool.bench.dev-dependencies]
+# package_name = "~=1.1.0"
