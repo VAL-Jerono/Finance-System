@@ -30,3 +30,17 @@ sites/**/logs/
 *.rdb
 *.aof
 myerp/sites/finsite.local/site_config.json
+# Ignore Frappe/ERPNext internals
+myerp/logs/
+myerp/sites/
+myerp/config/
+myerp/apps/frappe/
+myerp/apps/erpnext/
+
+# Ignore system files
+*.deb
+*.tar.gz
+__pycache__/
+*.pyc
+.env
+
