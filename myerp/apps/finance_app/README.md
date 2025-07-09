@@ -47,10 +47,23 @@ This app is designed to streamline and digitize **core financial operations** fo
    bench start
    ```
 
+### Preview
+
+![Bench start](finance_app/public/images/benchstart.png)
+
+
 4. Access the site
 
    * Navigate to: `http://localhost:8000`
    * Go to: `Finance App` > `Budget Plan`
+
+### Preview
+
+![Budet Plan](finance_app/public/images/budgetplan.png)
+
+### Preview
+
+![DocType](finance_app/public/images/doctype.png)
 
 ---
 
@@ -62,6 +75,7 @@ finance_app/
 │   ├── fixtures/        # Exported DocType and field definitions
 │   ├── config/
 │   ├── public/
+│   └── images/
 │   ├── templates/
 │   ├── __init__.py
 │   ├── hooks.py
@@ -79,7 +93,7 @@ finance_app/
 
 ---
 
-## 🙌 Author
+## Author
 
 **VAL-Jerono**
 GitHub: [VAL-Jerono](https://github.com/VAL-Jerono)
