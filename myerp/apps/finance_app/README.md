@@ -49,7 +49,7 @@ This app is designed to streamline and digitize **core financial operations** fo
 
 ### Preview
 
-![Bench start](finance_app/public/images/benchstart.png)
+![Bench start](public/images/benchstart.png)
 
 
 4. Access the site
@@ -59,11 +59,11 @@ This app is designed to streamline and digitize **core financial operations** fo
 
 ### Preview
 
-![Budet Plan](finance_app/public/images/budgetplan.png)
+![Budget Plan](public/images/budgetplan.png)
 
 ### Preview
 
-![DocType](finance_app/public/images/doctype.png)
+![DocType](public/images/doctype.png)
 
 ---
 
