@@ -7,20 +7,47 @@ app_license = "mit"
 
 
 
+
 fixtures = [
     {
         "dt": "Custom Field",
-        "filters": [
-            ["dt", "in", ["Budget Plan"]]
-        ]
+        "filters": [["dt", "in", [
+            "Budget Plan", "Expense Claim", "Invoice", "Invoice Item", 
+            "Fin Payment Entry", "Imprest Request", "Imprest Liquidation"
+        ]]]
     },
     {
         "dt": "DocType",
-        "filters": [
-            ["name", "in", ["Budget Plan"]]
-        ]
+        "filters": [["name", "in", [
+            "Budget Plan", "Expense Claim", "Invoice", "Invoice Item", 
+            "Fin Payment Entry", "Imprest Request", "Imprest Liquidation"
+        ]]]
+    },
+    {
+        "dt": "Workflow",
+        "filters": [["document_type", "in", ["Imprest Request"]]]
+    },
+    {
+        "dt": "Workflow State",
+        "filters": [["workflow_state_name", "in", ["Draft", "Requested", "Disbursed"]]]
+    },
+    {
+        "dt": "Workflow Action Master",
+        "filters": [["workflow_action_name", "in", ["Submit Request", "Disburse"]]]
     }
 ]
+
+scheduler_events = {
+    "daily": [
+        "finance_app.email_alert_overdue_liquidation.execute"
+    ]
+}
+
+doc_events = {
+    "Payment Entry": {
+        "on_submit": "finance_app.payment_entry_auto_link.on_submit"
+    }
+}
 
 
 
